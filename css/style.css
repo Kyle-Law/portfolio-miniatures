@@ -47,3 +47,26 @@ body[data-theme="dark"] {
   width: 150px;
   height: 150px;
 }
+
+
+/* Social Medias */
+
+.icons_styled {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
+.icons_styled li {
+  list-style: none;
+}
+
+.icons_styled li i {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.icons_styled li i:hover {
+  color: var(--primary-variant);
+}
