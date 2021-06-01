@@ -9,6 +9,21 @@ img {
   height: 100%;
 }
 
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .before-after-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 /* CSS Variables */
 /* Dark Light Mode */
 *:root {
@@ -42,13 +57,6 @@ body[data-theme="dark"] {
     object-fit: cover;
 }
 
-/* Starter */
-.profile {
-  width: 150px;
-  height: 150px;
-}
-
-
 /* Social Medias */
 
 .icons_styled {
@@ -69,4 +77,24 @@ body[data-theme="dark"] {
 
 .icons_styled li i:hover {
   color: var(--primary-variant);
+}
+
+.grid-item  {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.grid-container-styled {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+
+
+/* Starter */
+.profile {
+  width: 150px;
+  height: 150px;
 }
