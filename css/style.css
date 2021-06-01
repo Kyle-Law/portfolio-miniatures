@@ -162,6 +162,43 @@ body[data-theme="dark"] {
   color: var(--primary-color);
 }
 
+/* Contact Section*/
+.styled form {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--on-background);
+  margin: 10px 0;
+}
+
+.styled .form-group{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.styled .form-group input {
+  padding: 5px;
+}
+
+.styled form textarea {
+  padding: 5px;
+}
+
+.styled .button-primary {
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--on-primary);
+}
+
+.styled .button-primary:hover {
+  background-color: var(--primary-variant);
+  color: var(--on-primary);
+  cursor: pointer
+}
+
 
 
 /* Starter */
