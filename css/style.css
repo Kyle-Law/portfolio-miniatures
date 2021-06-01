@@ -158,6 +158,10 @@ body[data-theme="dark"] {
   padding: 20px;
 }
 
+.stars_styled .fa-star{
+  color: var(--primary-color);
+}
+
 
 
 /* Starter */
