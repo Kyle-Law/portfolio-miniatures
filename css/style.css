@@ -85,10 +85,22 @@ body[data-theme="dark"] {
   border: 1px solid black;
 }
 
-.grid-container-styled {
+.grid-card-styled {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
+}
+
+.grid-layout-styled {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-layout-styled {
+    grid-template-columns: 1fr;
+  }
 }
 
 
