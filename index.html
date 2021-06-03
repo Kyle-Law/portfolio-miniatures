@@ -18,6 +18,14 @@
 <body>
   <div class="container">
     <div class="card my-4 p-5">
+      <h2>Setup</h2>
+      <h5>Resources</h5>
+      <ul>
+        <li class="small"><a href="https://github.com/Kyle-Law/portfolio-miniatures">Github Repository</a></li>
+        <li class="small"><a href="https://code.visualstudio.com/">Download VSCode</a></li>
+      </ul>
+    </div>
+    <div class="card my-4 p-5">
       <h2>Feature 1 - Profile Picture</h2>
       <h5>Concepts</h5>
       <ul>
@@ -167,7 +175,7 @@
       </div>
     </div>
     <div class="card my-4 p-5">
-      <h2>Feature 6 - Twinkle stars</h2>
+      <h2>Feature 6 - Star Rating</h2>
       <h5>Concepts</h5>
       <ul>
         <li class="small">FontAwesome Icons & Styling</li>
@@ -243,14 +251,46 @@
             <input class="button-primary" type="submit" value="Submit">
           </form>
         </div>
-
-
       </div>
     </div>
-
+    <div class="card my-4 p-5">
+      <h2>Feature 8 - Flipable Card</h2>
+      <h5>Concepts</h5>
+      <ul>
+        <li class="small">Rotate X & Y with transform property</li>
+        <li class="small">Transition & 3d transform style</li>
+        <li class="small">backface visibility CSS property</li>
+      </ul>
+      <h5>Resources</h5>
+      <ul>
+        <li class="small"><a href="https://www.w3schools.com/howto/howto_css_flip_card.asp">flipcard tutorial by w3schools</a></li>
+      </ul>
+      <div class="before-after-grid">
+        <div class="_flip-card">
+          <div class="_flip-card-inner">
+            <div class="_flip-card-front">
+              <img src="images/passport_photo.jpg" alt="Avatar">
+            </div>
+            <div class="_flip-card-back">
+              <h1>Kyle Law</h1>
+              <p>Software Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/passport_photo.jpg" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h1>Kyle Law</h1>
+              <p>Software Engineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
   <script>
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
       checkbox.addEventListener('change',()=>{
