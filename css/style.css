@@ -223,13 +223,6 @@ body[data-theme="dark"] {
   100% { transform: rotate(360deg); }
 }
 
-
-/* Starter */
-.profile {
-  width: 150px;
-  height: 150px;
-}
-
 /* CSS Grid Layout */
 
 .grid-layout {
@@ -243,4 +236,10 @@ body[data-theme="dark"] {
   .grid-layout {
     grid-template-columns: 1fr;
   }
+}
+
+/* Starter */
+.profile {
+  width: 150px;
+  height: 150px;
 }
