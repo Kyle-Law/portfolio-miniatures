@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,10 +17,14 @@
 
   <!-- Animate.css CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AnimateOnScroll CDN (CSS)-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <div class="card my-4 p-5">
+    <!-- Setting up... -->
+    <div data-aos="fade-right" class="card my-4 p-5">
       <h2>Setup</h2>
       <h5>Resources</h5>
       <ul>
@@ -28,7 +32,8 @@
         <li class="small"><a href="https://code.visualstudio.com/" target="_blank">Download VSCode</a></li>
       </ul>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 1 - Profile Picture -->
+    <div data-aos="fade-left" class="card my-4 p-5">
       <h2>Feature 1 - Profile Picture</h2>
       <h5>Concepts</h5>
       <ul>
@@ -44,7 +49,8 @@
         <img class="profile_styled" src="images/passport_photo.jpg" alt="profile_pic">
       </div>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 2 - Social Media Icons -->
+    <div data-aos="fade-right" class="card my-4 p-5">
       <h2>Feature 2 - Social Media Icons</h2>
       <h5>Concepts</h5>
       <ul>
@@ -98,7 +104,8 @@
         </ul>
       </div>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 3 - Auto-Responsive Card using CSS Grid -->
+    <div data-aos="fade-left" class="card my-4 p-5">
       <h2>Feature 3 - Auto-Responsive Card using CSS Grid</h2>
       <h5>Concepts</h5>
       <ul>
@@ -124,7 +131,8 @@
         <div class="grid-item">4</div>
       </div>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 4 - Auto-Responsive Layout using CSS Grid -->
+    <div data-aos="fade-right"class="card my-4 p-5">
       <h2>Feature 4 - Auto-Responsive Layout using CSS Grid</h2>
       <h5>Concepts</h5>
       <ul>
@@ -146,7 +154,8 @@
         <div class="grid-item">Right</div>
       </div>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 5 - Absolute Positioning -->
+    <div data-aos="fade-left" class="card my-4 p-5">
       <h2>Feature 5 - Absolute Positioning</h2>
       <h5>Concepts</h5>
       <ul>
@@ -160,8 +169,7 @@
       </ul>
       <div class="before-after-grid">
         <div class=" theme-container ">
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis tempora ea. Vitae aliquid nobis numquam
-            voluptatum ipsa, eligendi earum nesciunt, cum beatae iste magni ducimus accusamus ipsum? Unde, placeat.</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis tempora ea. Vitae aliquid nobis numquam voluptatum ipsa, eligendi earum nesciunt, cum beatae iste magni ducimus accusamus ipsum? Unde, placeat.</div>
           <label class="toggle" for="theme">
             <input type="checkbox" name="theme" id="theme">
             <span class="check"></span>
@@ -177,7 +185,8 @@
         </div>
       </div>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 6 - Star Rating -->
+    <div data-aos="fade-right" class="card my-4 p-5">
       <h2>Feature 6 - Star Rating</h2>
       <h5>Concepts</h5>
       <ul>
@@ -219,7 +228,8 @@
         </dl>
       </div>
     </div>
-    <div class="card my-4 p-5">
+    <!-- Feature 7 - Contact Form -->
+    <div data-aos="fade-left" class="card my-4 p-5">
       <h2>Feature 7 - Contact Form</h2>
       <h5>Concepts</h5>
       <ul>
@@ -240,14 +250,10 @@
         </form>
         <div class="styled">
           <form>
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-            </div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
             <label for="message">Message:</label>
             <textarea cols="20" rows="5" id="message" name="message" required></textarea>
 
@@ -256,56 +262,9 @@
         </div>
       </div>
     </div>
-    <div class="card my-4 p-5">
-      <h2>Feature 8 - Flipable Card</h2>
-      <h5>Concepts</h5>
-      <ul>
-        <li class="small">Rotate X & Y with transform property</li>
-        <li class="small">Transition & 3d transform style</li>
-        <li class="small">backface visibility CSS property</li>
-      </ul>
-      <h5>Resources</h5>
-      <ul>
-        <li class="small"><a href="https://www.w3schools.com/howto/howto_css_flip_card.asp">flipcard tutorial by w3schools</a></li>
-      </ul>
-      <div class="before-after-grid">
-        <div class="_flip-card">
-          <div class="_flip-card-inner">
-            <div class="_flip-card-front">
-              <img src="images/passport_photo.jpg" alt="Avatar">
-            </div>
-            <div class="_flip-card-back">
-              <h1>Kyle Law</h1>
-              <p>Software Engineer</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/passport_photo.jpg" alt="Avatar">
-            </div>
-            <div class="flip-card-back">
-              <h1>Kyle Law</h1>
-              <p>Software Engineer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card my-4 p-5">
-      <h2>Feature 9 - Animation</h2>
-      <h5>Concepts</h5>
-      <ul>
-        <li class="small">Basic CSS animation using animate.css</li>
-      </ul>
-      <div class="before-after-grid">
-        <h1>Some text here...</h1>
-        <h1 class="animate__animated animate__bounce animate__delay-2s">Some text here...</h1>
-      </div>
-    </div>
-    <div class="card my-4 p-5">
-      <h2>Feature 10 - Loader using Animation</h2>
+    <!-- Feature 8 - Loader using Animation-->
+    <div data-aos="fade-left" class="card my-4 p-5">
+      <h2>Feature 8 - Loader using Animation</h2>
       <h5>Concepts</h5>
       <ul>
         <li class="small">Basic CSS animation with keyframes</li>
@@ -315,8 +274,19 @@
         <div class="loader"></div>
       </div>
     </div>
-    <div class="card my-4 p-5">
-      <h2>Feature 11 - auto-responsive card using flex</h2>
+    <!-- Feature 9 - Animate on Scroll -->
+    <div data-aos="fade-right" class="card my-4 p-5">
+      <h2>Feature 9 - Animate on Scroll</h2>
+      <h5>Concepts</h5>
+      <ul>
+        <li class="small">Using Animate on Scroll CDNs</li>
+      </ul>
+      <div class="before-after-grid">
+      </div>
+    </div>
+    <!-- Feature 9 - Auto Responsive Cards using FlexBox -->
+    <div data-aos="fade-left" class="card my-4 p-5">
+      <h2>Feature 10 - Auto-responsive card using FlexBox</h2>
       <h5>Concepts</h5>
       <ul>
         <li class="small">CSS FlexBox</li>
@@ -349,6 +319,9 @@
     </div>
   </div>
 
+  <!-- AnimateOnScroll CDN (JS) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JavaScipt for toggling dark/light theme -->
   <script>
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
       checkbox.addEventListener('change',()=>{
@@ -359,6 +332,8 @@
         }
       })
     })
+    // Initialize AnimateOnScroll
+    AOS.init();
   </script>
 </body>
 </html>
